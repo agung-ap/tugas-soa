@@ -1,0 +1,36 @@
+version: '3.8'
+networks:
+    app-tier:
+        driver: bridge
+services:
+  php:
+    container_name: php_server
+    build:
+      context: ./server
+      dockerfile: docker/php/Dockerfile
+    networks:
+      - app-tier
+    ports:
+      - "9002:9000"
+    volumes:
+      - ./server:/srv/app
+  nginx:
+    container_name: php_server_nginx
+    build:
+      context: ./server
+      dockerfile: docker/nginx/Dockerfile
+    networks:
+      - app-tier
+    ports:
+      - "8000:80"
+    volumes:
+      - ./server/public:/srv/app/public
+    depends_on:
+      - php
+  python:
+    container_name: python_client
+    build:
+      context: ./client1
+      dockerfile: docker/python/Dockerfile
+    volumes:
+      - ./client1:/srv/app
