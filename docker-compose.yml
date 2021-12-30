@@ -30,7 +30,11 @@ services:
   ubuntu:
     container_name: ubuntu_server
     build: ./client
+    networks:
+      - app-tier
     ports:
       - "9092:92"
     restart: on-failure
     command: ["sleep","infinity"]
+    volumes:
+      - ./client/python:/home/client/python
