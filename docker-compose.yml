@@ -37,4 +37,4 @@ services:
     restart: on-failure
     command: ["sleep","infinity"]
     volumes:
-      - ./client/python:/home/client/python
+      - ./client:/home/client

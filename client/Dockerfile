@@ -6,14 +6,17 @@ ENV DEBIAN_FRONTEND = noninteractive
 
 RUN apt-get update -y \
 	&& apt-get upgrade -y \
-	&& apt-get install -y git \ 
+	&& apt-get install -y git \
 		vim \
 		wget \
 		tar \
+		golang-go \
 		python3 \
-		default-jdk
+		python3-pip \
+		default-jdk \
+	&& pip install requests
 
-COPY ./python /home/client/python
+COPY . /home/client
 
 WORKDIR /home/client
 
