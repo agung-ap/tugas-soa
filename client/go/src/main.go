@@ -17,8 +17,10 @@ func main() {
     }
 
     responseData, err := ioutil.ReadAll(response.Body)
+
     if err != nil {
         log.Fatal(err)
     }
+    
     fmt.Println(string(responseData))
 }
