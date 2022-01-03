@@ -2,7 +2,9 @@
 
 namespace App\Infrastructure\Repositories\User;
 
-class UserRepositories
+use App\Infrastructure\Repositories\BaseRepositories;
+
+class UserRepositories extends BaseRepositories implements UserInterface
 {
 
 }
