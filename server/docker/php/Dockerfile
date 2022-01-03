@@ -7,7 +7,7 @@ COPY composer.phar /usr/local/bin/composer
 
 RUN apt-get update \
 	&& apt-get install -y git vim libpq-dev libzip-dev libjpeg62-turbo-dev libpng-dev libfreetype6-dev zip \
-	&& docker-php-ext-install gd zip \
+	&& docker-php-ext-install gd zip pdo pdo_pgsql \
     && chmod +x /usr/local/bin/composer
 
 COPY . /srv/app

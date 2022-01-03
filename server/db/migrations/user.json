@@ -1,0 +1,32 @@
+[
+    {
+        "user_id": 2021000001,
+        "name": "Admin1",
+        "role": 1
+    },
+    {
+        "user_id": 2021000002,
+        "name": "Admin2",
+        "role": 1
+    },
+    {
+        "user_id": 2021000003,
+        "name": "Supplier1",
+        "role": 2
+    },
+    {
+        "user_id": 2022000004,
+        "name": "Supplier2",
+        "role": 2
+    },
+    {
+        "user_id": 2022000005,
+        "name": "Customer1",
+        "role": 3
+    },
+    {
+        "user_id": 2022000006,
+        "name": "Customer2",
+        "role": 3
+    }
+]

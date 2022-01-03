@@ -1,7 +1,7 @@
 version: '3.8'
 networks:
-    app-tier:
-        driver: bridge
+  app-tier:
+    driver: bridge
 services:
   php:
     container_name: php_server
@@ -27,6 +27,19 @@ services:
       - ./server/public:/srv/app/public
     depends_on:
       - php
+  postgresql:
+    container_name: php_postgresql
+    image: postgres:13
+    env_file:
+      - server/docker/postgres/database.env
+    networks:
+      - app-tier
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+    depends_on:
+      - php
   ubuntu:
     container_name: ubuntu_server
     build: ./client
@@ -35,6 +48,8 @@ services:
     ports:
       - "9092:92"
     restart: on-failure
-    command: ["sleep","infinity"]
+    command: [ "sleep","infinity" ]
     volumes:
       - ./client:/home/client
+volumes:
+  pg_data:

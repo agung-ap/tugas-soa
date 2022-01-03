@@ -1,0 +1,92 @@
+[
+    {
+        "Prod_ID": "P0000000001",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 100
+    },
+    {
+        "Prod_ID": "P0000000002",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 80
+    },
+    {
+        "Prod_ID": "P0000000003",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 70
+    },
+    {
+        "Prod_ID": "P0000000004",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 60
+    },
+    {
+        "Prod_ID": "P0000000005",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 50
+    },
+    {
+        "Prod_ID": "P0000000006",
+        "Branch_ID": "B001",
+        "Inventory_Qty": 40
+    },
+    {
+        "Prod_ID": "P0000000001",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 50
+    },
+    {
+        "Prod_ID": "P0000000002",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 60
+    },
+    {
+        "Prod_ID": "P0000000003",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 70
+    },
+    {
+        "Prod_ID": "P0000000004",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 80
+    },
+    {
+        "Prod_ID": "P0000000005",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 90
+    },
+    {
+        "Prod_ID": "P0000000006",
+        "Branch_ID": "B002",
+        "Inventory_Qty": 100
+    },
+    {
+        "Prod_ID": "P0000000001",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 0
+    },
+    {
+        "Prod_ID": "P0000000002",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 10
+    },
+    {
+        "Prod_ID": "P0000000003",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 20
+    },
+    {
+        "Prod_ID": "P0000000004",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 30
+    },
+    {
+        "Prod_ID": "P0000000005",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 40
+    },
+    {
+        "Prod_ID": "P0000000006",
+        "Branch_ID": "B003",
+        "Inventory_Qty": 50
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "prod_id": "P0000000001",
+        "name": "Produk 1",
+        "price": 1000000
+    },
+    {
+        "prod_id": "P0000000002",
+        "name": "Produk 2",
+        "price": 800000
+    },
+    {
+        "prod_id": "P0000000003",
+        "name": "Produk 3",
+        "price": 2000000
+    },
+    {
+        "prod_id": "P0000000004",
+        "name": "Produk 4",
+        "price": 500000
+    },
+    {
+        "prod_id": "P0000000005",
+        "name": "Produk 5",
+        "price": 600000
+    },
+    {
+        "prod_id": "P0000000006",
+        "name": "Produk 6",
+        "price": 1500000
+    }
+]

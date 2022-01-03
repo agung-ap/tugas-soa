@@ -1,0 +1,14 @@
+[
+    {
+        "branch_id": "B001",
+        "city": "Jakarta"
+    },
+    {
+        "branch_id": "B002",
+        "city": "Semarang"
+    },
+    {
+        "branch_id": "B003",
+        "city": "Surabaya"
+    }
+]
