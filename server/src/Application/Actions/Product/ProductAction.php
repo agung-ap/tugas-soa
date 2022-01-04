@@ -1,29 +1,28 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Application\Actions\User;
+namespace App\Application\Actions\Product;
 
 use App\Application\Actions\Action;
-use App\Domain\User\ProductInterface;
-use App\Infrastructure\Repositories\User\UserInterface;
+use App\Infrastructure\Repositories\Product\ProductInterface;
 use Psr\Log\LoggerInterface;
 
-abstract class UserAction extends Action
+abstract class ProductAction extends Action
 {
     /**
      * @var ProductInterface
      */
-    protected $user;
+    protected $product;
 
     /**
      * @param LoggerInterface $logger
-     * @param UserInterface $user
+     * @param ProductInterface $product
      */
     public function __construct(
         LoggerInterface $logger,
-        UserInterface $user
+        ProductInterface $product
     ) {
         parent::__construct($logger);
-        $this->user = $user;
+        $this->product = $product;
     }
 }

@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Infrastructure\Repositories\User;
+namespace App\Infrastructure\Repositories\Branch;
 
 use App\Infrastructure\Repositories\BaseRepositories;
 
-class UserRepositories extends BaseRepositories implements UserInterface
+class BranchRepositories extends BaseRepositories implements BranchInterface
 {
+
     public function findAll()
     {
         $query = $this->db
-            ->table('tbl_user')
+            ->table('tbl_branch')
             ->get()
             ->toArray();
 

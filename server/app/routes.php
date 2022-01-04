@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+use App\Application\Actions\Branch\ListBranchAction;
+use App\Application\Actions\Inventory\ListInventoryAction;
+use App\Application\Actions\Product\ListProductsAction;
 use App\Application\Actions\User\ListUsersAction;
 use App\Application\Actions\User\ViewUserAction;
 use Psr\Http\Message\ResponseInterface as Response;
@@ -22,5 +25,17 @@ return function (App $app) {
     $app->group('/users', function (Group $group) {
         $group->get('', ListUsersAction::class);
         $group->get('/{id}', ViewUserAction::class);
+    });
+
+    $app->group('/product', function (Group $group) {
+        $group->get('', ListProductsAction::class);
+    });
+
+    $app->group('/inventory', function (Group $group) {
+        $group->get('', ListInventoryAction::class);
+    });
+
+    $app->group('/branch', function (Group $group) {
+        $group->get('', ListBranchAction::class);
     });
 };

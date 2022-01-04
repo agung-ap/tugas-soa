@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Infrastructure\Repositories\User;
+namespace App\Infrastructure\Repositories\Product;
 
 use App\Infrastructure\Repositories\BaseRepositories;
 
-class UserRepositories extends BaseRepositories implements UserInterface
+class ProductRepositories extends BaseRepositories implements ProductInterface
 {
+
     public function findAll()
     {
         $query = $this->db
-            ->table('tbl_user')
+            ->table('tbl_product')
             ->get()
             ->toArray();
 

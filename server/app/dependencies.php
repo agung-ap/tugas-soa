@@ -34,7 +34,7 @@ return function (ContainerBuilder $containerBuilder) {
 
                 $capsule = new Manager();
 
-                $dbSettings = $settings ['db'];
+                $dbSettings = $settings->get('db');
 
                 $capsule->addConnection(
                     array(
