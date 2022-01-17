@@ -48,7 +48,7 @@ services:
     ports:
       - "9092:92"
     restart: on-failure
-    command: [ "sleep","infinity" ]
+    command: sh 'running.sh'
     volumes:
       - ./client:/home/client
 volumes:

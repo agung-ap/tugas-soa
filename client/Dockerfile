@@ -18,5 +18,7 @@ RUN apt-get update -y \
 
 COPY . /home/client
 
+ADD .running.sh .
+
 WORKDIR /home/client
 
